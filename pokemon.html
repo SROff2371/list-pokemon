@@ -3,264 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Pokémon de la 2e et 3e Génération</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Liste des Pokémon</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .search-bar {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .pokemon-image {
+            width: 60px;
+        }
+        .hidden { display: none; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Liste des Pokémon de la 2e et 3e Génération</h1>
-    </header>
-
-    <section class="generation">
-        <h2>2e Génération</h2>
-        <div class="pokemon-list">
-<div class="pokemon-item"><input type="checkbox" id="pokemon_152"><label for="pokemon_152">#152 Germignon | Chikorita</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_153"><label for="pokemon_153">#153 Macronium | Bayleef</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_154"><label for="pokemon_154">#154 Meganium | Meganium</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_155"><label for="pokemon_155">#155 Hericendre | Cyndaquil</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_156"><label for="pokemon_156">#156 Feurisson | Quilava</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_157"><label for="pokemon_157">#157 Typhlosion | Typhlosion</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_158"><label for="pokemon_158">#158 Kaiminus | Totodile</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_159"><label for="pokemon_159">#159 Crocrodil | Croconaw</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_160"><label for="pokemon_160">#160 Aligatueur | Feraligatr</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_161"><label for="pokemon_161">#161 Fouinette | Sentret</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_162"><label for="pokemon_162">#162 Fouinar | Furret</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_163"><label for="pokemon_163">#163 Hoothoot | Hoothoot</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_164"><label for="pokemon_164">#164 Noarfang | Noctowl</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_165"><label for="pokemon_165">#165 Coxy | Ledyba</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_166"><label for="pokemon_166">#166 Coxyclaque | Ledian</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_167"><label for="pokemon_167">#167 Mimigal | Spinarak</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_168"><label for="pokemon_168">#168 Migalos | Ariados</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_169"><label for="pokemon_169">#169 Nostenfer | Crobat</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_170"><label for="pokemon_170">#170 Loupio | Chinchou</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_171"><label for="pokemon_171">#171 Lanturn | Lanturn</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_172"><label for="pokemon_172">#172 Pichu | Pichu</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_173"><label for="pokemon_173">#173 Melo | Togepi</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_174"><label for="pokemon_174">#174 Toudoudou | Togetic</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_175"><label for="pokemon_175">#175 Togepi | Togepi</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_176"><label for="pokemon_176">#176 Togetic | Togetic</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_177"><label for="pokemon_177">#177 Natu | Natu</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_178"><label for="pokemon_178">#178 Xatu | Xatu</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_179"><label for="pokemon_179">#179 Wattouat | Mareep</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_180"><label for="pokemon_180">#180 Lainergie | Flaaffy</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_181"><label for="pokemon_181">#181 Pharamp | Ampharos</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_182"><label for="pokemon_182">#182 Joliflor | Bellossom</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_183"><label for="pokemon_183">#183 Marill | Marill</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_184"><label for="pokemon_184">#184 Azumarill | Azumarill</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_185"><label for="pokemon_185">#185 Simularbre | Sudowoodo</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_186"><label for="pokemon_186">#186 Tarpaud | Politoed</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_187"><label for="pokemon_187">#187 Granivol | Hoppip</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_188"><label for="pokemon_188">#188 Floravol | Skiploom</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_189"><label for="pokemon_189">#189 Cotovol | Jumpluff</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_190"><label for="pokemon_190">#190 Capumain | Aipom</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_191"><label for="pokemon_191">#191 Tournegrin | Ambipom</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_192"><label for="pokemon_192">#192 Héliatronc | Sunkern</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_193"><label for="pokemon_193">#193 Yanma | Yanma</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_194"><label for="pokemon_194">#194 Axoloto | Axolotl</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_195"><label for="pokemon_195">#195 Maraiste | Marastit</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_196"><label for="pokemon_196">#196 Mentali | Espeon</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_197"><label for="pokemon_197">#197 Noctali | Umbreon</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_198"><label for="pokemon_198">#198 Cornèbre | Murkrow</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_199"><label for="pokemon_199">#199 Roigadanote 8 | Steelix</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_200"><label for="pokemon_200">#200 Feuforêve | Girafarig</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_201"><label for="pokemon_201">#201 Zarbi | Qulbutoké</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_202"><label for="pokemon_202">#202 Qulbutoké | Girafarig</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_203"><label for="pokemon_203">#203 Girafarig | Girafarig</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_204"><label for="pokemon_204">#204 Pomdepik | Girafarig</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_205"><label for="pokemon_205">#205 Foretress | Steelix</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_206"><label for="pokemon_206">#206 Insolourdo | Steelix</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_207"><label for="pokemon_207">#207 Scorplane | Steelix</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_208"><label for="pokemon_208">#208 Steelix | Steelix</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_209"><label for="pokemon_209">#209 Snubbull | Snubbull</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_210"><label for="pokemon_210">#210 Granbull | Granbull</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_211"><label for="pokemon_211">#211 Qwilfish | Qwilfish</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_212"><label for="pokemon_212">#212 Cizayox | Scizor</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_213"><label for="pokemon_213">#213 Caratroc | Shuckle</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_214"><label for="pokemon_214">#214 Scarhino | Heracross</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_215"><label for="pokemon_215">#215 Farfuret | Sneasel</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_216"><label for="pokemon_216">#216 Teddiursa | Teddiursa</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_217"><label for="pokemon_217">#217 Ursaring | Ursaring</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_218"><label for="pokemon_218">#218 Limagma | Magcargo</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_219"><label for="pokemon_219">#219 Volcaropod | Slugma</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_220"><label for="pokemon_220">#220 Marcacrin | Donphan</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_221"><label for="pokemon_221">#221 Cochignon | Swinub</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_222"><label for="pokemon_222">#222 Corayon | Corsola</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_223"><label for="pokemon_223">#223 Remoraid | Remoraid</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_224"><label for="pokemon_224">#224 Octillery | Octillery</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_225"><label for="pokemon_225">#225 Cadoizo | Chinchou</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_226"><label for="pokemon_226">#226 Demanta | Qwilfish</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_227"><label for="pokemon_227">#227 Airmure | Steelix</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_228"><label for="pokemon_228">#228 Malosse | Houndoom</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_229"><label for="pokemon_229">#229 Demolosse | Houndoom</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_230"><label for="pokemon_230">#230 Hyporoi | Phanpy</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_231"><label for="pokemon_231">#231 Phanpy | Phanpy</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_232"><label for="pokemon_232">#232 Donphan | Donphan</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_233"><label for="pokemon_233">#233 Porygon2 | Porygon2</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_234"><label for="pokemon_234">#234 Cerfrousse | Stantler</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_235"><label for="pokemon_235">#235 Queulorior | Girafarig</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_236"><label for="pokemon_236">#236 Debugant | Girafarig</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_237"><label for="pokemon_237">#237 Kapoera | Hitmontop</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_238"><label for="pokemon_238">#238 Lippouti | Snubbull</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_239"><label for="pokemon_239">#239 Elekid | Electivire</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_240"><label for="pokemon_240">#240 Magby | Magmar</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_241"><label for="pokemon_241">#241 Ecremeuh | Miltank</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_242"><label for="pokemon_242">#242 Leuphorie | Blissey</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_243"><label for="pokemon_243">#243 Raikou | Raikou</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_244"><label for="pokemon_244">#244 Entei | Entei</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_245"><label for="pokemon_245">#245 Suicune | Suicune</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_246"><label for="pokemon_246">#246 Embrylex | Larvitar</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_247"><label for="pokemon_247">#247 Ymphect | Pupitar</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_248"><label for="pokemon_248">#248 Tyranocif | Tyranitar</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_249"><label for="pokemon_249">#249 Lugia | Lugia</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_250"><label for="pokemon_250">#250 Ho-oh | Ho-oh</label></div>
-<div class="pokemon-item"><input type="checkbox" id="pokemon_251"><label for="pokemon_251">#251 Celebi | Celebi</label></div>
-
-
-
-
-        </div>
-    </section>
-
-<section class="generation">
-    <h2>3e Génération</h2>
-    <div class="pokemon-list">
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_252"><label for="pokemon_252">#252 Arcko | Treecko</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_253"><label for="pokemon_253">#253 Massko | Grovyle</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_254"><label for="pokemon_254">#254 Jungko | Sceptile</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_255"><label for="pokemon_255">#255 Poussifeu | Torchic</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_256"><label for="pokemon_256">#256 Galifeu | Combusken</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_257"><label for="pokemon_257">#257 Braségali | Blaziken</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_258"><label for="pokemon_258">#258 Gobou | Mudkip</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_259"><label for="pokemon_259">#259 Flobio | Marshtomp</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_260"><label for="pokemon_260">#260 Laggron | Swampert</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_261"><label for="pokemon_261">#261 Medhyèna | Poochyena</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_262"><label for="pokemon_262">#262 Grahyèna | Mightyena</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_263"><label for="pokemon_263">#263 Zigzaton | Zigzagoon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_264"><label for="pokemon_264">#264 Linéon | Linoone</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_265"><label for="pokemon_265">#265 Chenipotte | Wurmple</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_266"><label for="pokemon_266">#266 Armulys | Silcoon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_267"><label for="pokemon_267">#267 Charmillon | Beautifly</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_268"><label for="pokemon_268">#268 Bindalys | Cascoon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_269"><label for="pokemon_269">#269 Papinox | Dustox</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_270"><label for="pokemon_270">#270 Nénupiot | Lotad</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_271"><label for="pokemon_271">#271 Lombre | Lombre</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_272"><label for="pokemon_272">#272 Ludicolo | Ludicolo</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_273"><label for="pokemon_273">#273 Grainipiot | Seedot</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_274"><label for="pokemon_274">#274 Pifeuil | Nuzleaf</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_275"><label for="pokemon_275">#275 Tengalice | Shiftry</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_276"><label for="pokemon_276">#276 Nirondelle | Taillow</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_277"><label for="pokemon_277">#277 Hélédelle | Swellow</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_278"><label for="pokemon_278">#278 Goélise | Wingull</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_279"><label for="pokemon_279">#279 Bekipan | Pelipper</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_280"><label for="pokemon_280">#280 Tarsal | Ralts</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_281"><label for="pokemon_281">#281 Kirlia | Kirlia</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_282"><label for="pokemon_282">#282 Gardevoir | Gardevoir</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_283"><label for="pokemon_283">#283 Arakdo | Surskit</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_284"><label for="pokemon_284">#284 Maskadra | Masquerain</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_285"><label for="pokemon_285">#285 Balignon | Shroomish</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_286"><label for="pokemon_286">#286 Chapignon | Breloom</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_287"><label for="pokemon_287">#287 Parecool | Slakoth</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_288"><label for="pokemon_288">#288 Vigoroth | Vigoroth</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_289"><label for="pokemon_289">#289 Monaflèmit | Slaking</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_290"><label for="pokemon_290">#290 Ningale | Nincada</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_291"><label for="pokemon_291">#291 Ninjask | Ninjask</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_292"><label for="pokemon_292">#292 Munja | Shedinja</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_293"><label for="pokemon_293">#293 Chuchmur | Whismur</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_294"><label for="pokemon_294">#294 Ramboum | Loudred</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_295"><label for="pokemon_295">#295 Brouhabam | Exploud</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_296"><label for="pokemon_296">#296 Makuhita | Makuhita</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_297"><label for="pokemon_297">#297 Hariyama | Hariyama</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_298"><label for="pokemon_298">#298 Azurill | Azurill</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_299"><label for="pokemon_299">#299 Tarinor | Nosepass</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_300"><label for="pokemon_300">#300 Skitty | Skitty</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_301"><label for="pokemon_301">#301 Declatty | Delcatty</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_302"><label for="pokemon_302">#302 Ténéfix | Sableye</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_303"><label for="pokemon_303">#303 Mysdibule | Mawile</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_304"><label for="pokemon_304">#304 Galekid | Aron</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_305"><label for="pokemon_305">#305 Galegon | Lairon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_306"><label for="pokemon_306">#306 Galeking | Aggron</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_307"><label for="pokemon_307">#307 Meditikka | Meditite</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_308"><label for="pokemon_308">#308 Charmina | Medicham</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_309"><label for="pokemon_309">#309 Dynavolt | Electrike</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_310"><label for="pokemon_310">#310 Elecsprint | Manectric</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_311"><label for="pokemon_311">#311 Posipi | Plusle</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_312"><label for="pokemon_312">#312 Negapi | Minun</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_313"><label for="pokemon_313">#313 Muciole | Volbeat</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_314"><label for="pokemon_314">#314 Lumivole | Illumise</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_315"><label for="pokemon_315">#315 Rosélia | Roselia</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_316"><label for="pokemon_316">#316 Gloupti | Swalot</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_317"><label for="pokemon_317">#317 Avaltout | Carvanha</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_318"><label for="pokemon_318">#318 Carvanha | Sharpedo</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_319"><label for="pokemon_319">#319 Sharpedo | Sharpedo</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_320"><label for="pokemon_320">#320 Wailmer | Wailmer</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_321"><label for="pokemon_321">#321 Wailord | Wailord</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_322"><label for="pokemon_322">#322 Chamallot | Numel</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_323"><label for="pokemon_323">#323 Camérupt | Camerupt</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_324"><label for="pokemon_324">#324 Chartor | Torkoal</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_325"><label for="pokemon_325">#325 Spoink | Spoink</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_326"><label for="pokemon_326">#326 Groret | Grumpig</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_327"><label for="pokemon_327">#327 Spinda | Spinda</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_328"><label for="pokemon_328">#328 Kraknoix | Trapinch</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_329"><label for="pokemon_329">#329 Vibraninf | Vibrava</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_330"><label for="pokemon_330">#330 Libégon | Flygon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_331"><label for="pokemon_331">#331 Cacnéa | Cacnea</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_332"><label for="pokemon_332">#332 Cacturne | Cacturne</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_333"><label for="pokemon_333">#333 Tylton | Swablu</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_334"><label for="pokemon_334">#334 Altaria | Altaria</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_335"><label for="pokemon_335">#335 Mangriff | Zangoose</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_336"><label for="pokemon_336">#336 Seviper | Seviper</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_337"><label for="pokemon_337">#337 Séléroc | Lunatone</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_338"><label for="pokemon_338">#338 Solaroc | Solrock</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_339"><label for="pokemon_339">#339 Barloche | Barboach</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_340"><label for="pokemon_340">#340 Barbicha | Whiscash</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_341"><label for="pokemon_341">#341 Écrapince | Corphish</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_342"><label for="pokemon_342">#342 Colhomard | Crawdaunt</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_343"><label for="pokemon_343">#343 Balbuto | Baltoy</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_344"><label for="pokemon_344">#344 Kaorine | Claydol</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_345"><label for="pokemon_345">#345 Lilia | Lileep</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_346"><label for="pokemon_346">#346 Vacilys | Cradily</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_347"><label for="pokemon_347">#347 Anorith | Anorith</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_348"><label for="pokemon_348">#348 Armaldo | Armaldo</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_349"><label for="pokemon_349">#349 Barpau | Feebas</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_350"><label for="pokemon_350">#350 Milobellus | Milotic</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_351"><label for="pokemon_351">#351 Morphéo | Castform</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_352"><label for="pokemon_352">#352 Kecleon | Kecleon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_353"><label for="pokemon_353">#353 Polichombr | Shuppet</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_354"><label for="pokemon_354">#354 Branette | Banette</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_355"><label for="pokemon_355">#355 Skelénox | Duskull</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_356"><label for="pokemon_356">#356 Téraclope | Dusclops</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_357"><label for="pokemon_357">#357 Tropius | Tropius</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_358"><label for="pokemon_358">#358 Éoko | Chimecho</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_359"><label for="pokemon_359">#359 Absol | Absol</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_360"><label for="pokemon_360">#360 Okéoké | Wynaut</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_361"><label for="pokemon_361">#361 Stalgamin | Snorunt</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_362"><label for="pokemon_362">#362 Oniglali | Glalie</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_363"><label for="pokemon_363">#363 Obalie | Spheal</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_364"><label for="pokemon_364">#364 Phogleur | Sealeo</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_365"><label for="pokemon_365">#365 Kaimorse | Walrein</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_366"><label for="pokemon_366">#366 Coquiperl | Clamperl</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_367"><label for="pokemon_367">#367 Serpang | Huntail</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_368"><label for="pokemon_368">#368 Rosabyss | Gorebyss</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_369"><label for="pokemon_369">#369 Relicanth | Relicanth</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_370"><label for="pokemon_370">#370 Lovdisc | Luvdisc</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_371"><label for="pokemon_371">#371 Draby | Bagon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_372"><label for="pokemon_372">#372 Drackhaus | Shelgon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_373"><label for="pokemon_373">#373 Drattak | Salamence</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_374"><label for="pokemon_374">#374 Terhal | Beldum</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_375"><label for="pokemon_375">#375 Metang | Metang</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_376"><label for="pokemon_376">#376 Metalosse | Metagross</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_377"><label for="pokemon_377">#377 Regirock | Regirock</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_378"><label for="pokemon_378">#378 Regice | Regice</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_379"><label for="pokemon_379">#379 Registeel | Registeel</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_380"><label for="pokemon_380">#380 Latias | Latias</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_381"><label for="pokemon_381">#381 Latios | Latios</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_382"><label for="pokemon_382">#382 Kyogre | Kyogre</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_383"><label for="pokemon_383">#383 Groudon | Groudon</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_384"><label for="pokemon_384">#384 Rayquaza | Rayquaza</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_385"><label for="pokemon_385">#385 Jirachi | Jirachi</label></div>
-        <div class="pokemon-item"><input type="checkbox" id="pokemon_386"><label for="pokemon_386">#386 Deoxys | Deoxys</label></div>
+    <h1>Liste des Pokémon</h1>
+    <div id="login-container">
+        <input type="text" id="username" placeholder="Nom d'utilisateur">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button onclick="login()">Se connecter</button>
     </div>
-</section>
+    <div class="container hidden" id="content">
+        <input type="text" class="search-bar" id="search" placeholder="Rechercher un Pokémon...">
+        <div id="pokemon-tables"></div>
+    </div>
+    <script>
+        let currentUser = null;
 
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if ((username === "_SR_Off_" && password === "Klim35700132.") || (username === "invite" && password === "invite")) {
+                currentUser = username;
+                document.getElementById("login-container").classList.add("hidden");
+                document.getElementById("content").classList.remove("hidden");
+                loadPokemonTables();
+            } else {
+                alert("Identifiants incorrects");
+            }
+        }
+
+        async function fetchAndDisplayPokemon(apiUrl, generation) {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                let pokemonList = [];
+
+                for (const pokemonEntry of data.pokemon_species) {
+                    const pokemonUrl = pokemonEntry.url;
+                    const pokemonResponse = await fetch(pokemonUrl);
+                    const pokemonData = await pokemonResponse.json();
+
+                    const pokedexNumber = pokemonData.id;
+                    const pokemonNameFR = pokemonData.names.find(n => n.language.name === "fr")?.name || pokemonData.name;
+                    const pokemonNameEN = pokemonData.names.find(n => n.language.name === "en")?.name || pokemonData.name;
+                    const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokedexNumber}.png`;
+
+                    pokemonList.push({ pokedexNumber, pokemonNameFR, pokemonNameEN, imageUrl });
+                }
+
+                pokemonList.sort((a, b) => a.pokedexNumber - b.pokedexNumber);
+
+                let tableHtml = `<h2>${generation}ᵉ Génération</h2>
+                    <table>
+                    <thead>
+                        <tr>
+                            <th>✔️</th>
+                            <th>Image</th>
+                            <th>Numéro</th>
+                            <th>Nom (FR)</th>
+                            <th>Nom (EN)</th>
+                        </tr>
+                    </thead>
+                    <tbody>`;
+
+                pokemonList.forEach(pokemon => {
+                    const isChecked = localStorage.getItem(`pokemon-${pokemon.pokedexNumber}`) === "true";
+                    let checkboxOrSymbol = currentUser === "_SR_Off_" 
+                        ? `<input type='checkbox' class='pokemon-checkbox' data-id='${pokemon.pokedexNumber}' ${isChecked ? "checked" : ""}>`
+                        : (isChecked ? "✅" : "❌");
+
+                    tableHtml += `
+                        <tr class='pokemon-row' data-name-fr='${pokemon.pokemonNameFR.toLowerCase()}' data-name-en='${pokemon.pokemonNameEN.toLowerCase()}' data-id='${pokemon.pokedexNumber}'>
+                            <td>${checkboxOrSymbol}</td>
+                            <td><img src="${pokemon.imageUrl}" class="pokemon-image" alt="${pokemon.pokemonNameFR}"></td>
+                            <td>${pokemon.pokedexNumber}</td>
+                            <td>${pokemon.pokemonNameFR}</td>
+                            <td>${pokemon.pokemonNameEN}</td>
+                        </tr>`;
+                });
+
+                tableHtml += `</tbody></table>`;
+                document.getElementById("pokemon-tables").innerHTML += tableHtml;
+
+                if (currentUser === "_SR_Off_") {
+                    document.querySelectorAll(".pokemon-checkbox").forEach(checkbox => {
+                        checkbox.addEventListener("change", function () {
+                            const pokemonId = this.getAttribute("data-id");
+                            localStorage.setItem(`pokemon-${pokemonId}`, this.checked ? "true" : "false");
+                        });
+                    });
+                }
+            } catch (error) {
+                console.error(`Erreur lors de la récupération des données :`, error);
+            }
+        }
+
+        function loadPokemonTables() {
+            document.getElementById("pokemon-tables").innerHTML = "";
+            fetchAndDisplayPokemon("https://pokeapi.co/api/v2/generation/2", 2);
+            fetchAndDisplayPokemon("https://pokeapi.co/api/v2/generation/3", 3);
+            fetchAndDisplayPokemon("https://pokeapi.co/api/v2/generation/4", 4);
+            fetchAndDisplayPokemon("https://pokeapi.co/api/v2/generation/5", 5);
+        }
+
+        document.getElementById("search").addEventListener("input", function() {
+            const searchValue = this.value.toLowerCase();
+            document.querySelectorAll(".pokemon-row").forEach(row => {
+                row.style.display = row.dataset.nameFr.includes(searchValue) || row.dataset.nameEn.includes(searchValue) || row.dataset.id.includes(searchValue) ? "" : "none";
+            });
+        });
+    </script>
 </body>
 </html>
